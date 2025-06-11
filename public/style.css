@@ -1,0 +1,260 @@
+/* #body {
+  display: flex;
+}
+
+#navbar {
+  position: fixed;
+  width: 15%;
+  min-height: 100vh;
+  background-color:rgb(223, 216, 216);
+  padding: 20px;
+  box-sizing: border-box; 
+  border-radius: 5px;
+  left: 0;
+  top: 0;
+  /* position: absolute; */
+/* }
+
+#content {
+  margin-left: 15%;
+  width: 85%;
+  min-height: 100vh;  
+  padding: 10px;
+  top: 0;
+}
+#company_logo img
+{
+    width: 90%;
+}
+
+#profile_img img
+{
+    width: 90%;
+}
+
+
+#nav_content ul
+{
+  list-style: none;
+  text-align: center;
+  padding: 0%;
+}
+
+#nav_content li
+{
+  /* padding: 0%; */
+  /* margin-top: 20%;
+  font-size: 100%;
+  font: weight 2px;
+
+}
+#person_name h1
+{
+  text-align: center;
+  font-size: 110%;
+  margin: 0;
+  margin-bottom: 30%;
+} */
+/* 
+#nav_content li:hover
+{
+  font-size: 120%;
+} */
+/* 
+#task_table
+{ */ */
+  /* background-color: blueviolet; */
+  /* border: 1px solid black;
+  width: 80%;
+  margin-left: 9%;
+  margin-top: 6%;
+  height: 80%;
+  border-radius: 2%;
+  padding: 2%;
+  box-sizing: border-box;
+}  */
+
+    #body 
+    {
+      display: flex;
+      font-family: Arial, sans-serif;
+    }
+
+    #navbar {
+      position: fixed;
+      width: 15%;
+      min-height: 100vh;
+      background-color: rgb(223, 216, 216);
+      padding: 20px;
+      box-sizing: border-box;
+      border-radius: 5px;
+      left: 0;
+      top: 0;
+    }
+
+    #content {
+      margin-left: 15%;
+      width: 85%;
+      min-height: 100vh;
+      padding: 20px;
+      top: 0;
+      background-color: #f5f5f5;
+      position: fixed;
+    }
+
+    #company_logo img {
+      width: 90%;
+      border-radius: 5px;
+    }
+
+    #profile_img img {
+      width: 90%;
+      /* border-radius: 5/0%; */
+      /* border: 2px solid #333; */
+    }
+
+    #nav_content ul {
+      list-style: none;
+      text-align: center;
+      padding: 0;
+    }
+
+    #nav_content li {
+      margin-top: 20%;
+      font-size: 100%;
+      font-weight: 500;
+      padding: 10px;
+      /* border-radius: 5px; */
+      /* transition: all 0.3s ease; */
+    }
+
+    #person_name h1 {
+      text-align: center;
+      font-size: 110%;
+      margin: 10px 0;
+      /* font-weight: bolder; */
+      margin-bottom: 20%;
+      /* color: #333; */
+    }
+     #nav_content a
+     {
+      text-decoration: none;
+      color: black;
+      font-size: 110%;
+      
+     }
+
+    #nav_content a:hover {
+      font-size: 120%;
+      /* background-color: #ffffff; */
+      /* font-weight:500; */
+    }
+
+    #task_table {
+      border: 1px solid #ccc;
+      width: 80%;
+      margin-left: 9%;
+      margin-top: 6%;
+      border-radius: 8px;
+      padding: 2%;
+      box-sizing: border-box;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: absolute;
+      /* overflow-x: auto; */
+    }
+
+    #profile_data{
+      border: 1px solid #ccc;
+      width: 80%;
+      margin-left: 9%;
+      margin-top: 6%;
+      border-radius: 8px;
+      padding: 2%;
+      box-sizing: border-box;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+     #profile_data label
+      {
+        margin: 20px;
+      }
+
+      #profile_data button
+      {
+        margin-left: 10%;
+        width: 15%;
+        height: 3%;
+
+      }
+    #taskTable {
+      width: 100%;
+      /* border-collapse: collapse; */
+      /* overflow-y:1px visible; */
+    }
+
+    #taskTable th, #taskTable td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    #taskTable th {
+      background-color: #4CAF50;
+      color: white;
+      font-weight: bold;
+    }
+
+    #taskTable tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    #error-message {
+      color: red;
+      text-align: center;
+      margin-top: 20px;
+      display: none;
+    }
+
+    /* #add_task_button
+    {
+      width: 10%;
+      border-radius: 1%;
+      border: 1px black;
+      text-align: center;
+      margin-left: 90%;
+      position: relative;
+    } */
+
+    #add_task_button {
+  width: 10%;                  
+  border-radius: 5px;
+  border: 1px solid black; 
+  text-align: center;
+  margin-left: auto;             
+  position: relative;
+  background-color: #f0f0f0;    
+}
+
+#add_task_button a
+{
+  text-decoration: none;
+  color: black;
+}
+#edit_task_button
+{
+  margin-left: 3%;
+   width: 10%;                  
+  border-radius: 5px;
+  border: 1px solid black; 
+  text-align: center;
+  /* margin-left: auto;              */
+  position: relative;
+  background-color: #f0f0f0;    
+}
+#edit_task_button a
+{
+  text-decoration: none;
+  color: black;
+}

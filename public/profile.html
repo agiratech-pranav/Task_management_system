@@ -1,0 +1,136 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="body">
+
+
+     <section id="navbar">
+
+        <div id="company_logo">
+          <img src="img/company_logo.png  ">
+        </div>
+
+        <br>
+
+        <div id="person_details">
+          <div id="profile_img">
+              <img src="img/proflile_img.png">
+          </div>
+
+          <div id="person_name">
+              <h1>Pranav Bhatnagar</h1>
+          </div>
+        </div>
+        
+        <div id="nav_content">
+          <ul>
+            <li>Dashboard</li>
+            <li>Profile</li>
+          </ul>
+        </div>
+
+     </section>
+
+
+     <section id="content">
+        
+        <div >
+
+        </div>
+
+        <div id="task_table">
+           <table id="taskTable">
+              <tr>
+                 <th>ID</th>
+                 <th>Title</th>
+                 <th>Description</th>
+                 <th>Status</th>
+                 <th>Created At</th>
+               </tr>
+           </table>
+        </div>
+     </section>
+
+  </section>
+
+<script src="javascript.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="body">
+    <section id="navbar">
+      <div id="company_logo">
+        <img src="img/company_logo.png" alt="Company Logo">
+      </div>
+      <br>
+      <div id="person_details">
+        <div id="profile_img">
+          <img src="img/proflile_img.png" alt="Profile Image">
+        </div>
+        <div id="person_name">
+          <h1>Pranav Bhatnagar</h1>
+        </div>
+      </div>
+      <div id="nav_content">
+        <ul>
+          <li><a href="http://127.0.0.1:5500/public/dashboard.html">Dashboard</a></li>
+          <li><a href="http://127.0.0.1:5500/public/profile.html">Profile</a></li>
+
+        </ul>
+      </div>
+    </section>
+
+    <section id="content">
+      <div id="profile_data">
+        
+        <form id="readonly_form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="Pranav Bhatnagar" readonly>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="pranav.b@agiratech.com" readonly>
+    
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" value="7982188822" readonly>
+            
+            <br><br><br>
+
+            <label for="blood_group">Blood Group:</label>
+            <input type="text" id="blood_group" name="blood_group" value="O+" readonly style="width: 13.5%;">
+    
+            <label for="alt_phone">Alternative Number:</label>
+            <input type="tel" id="alt_phone" name="alt_phone" value="7982188822" readonly>
+    
+            <br><br><br>
+            <div style="display: flex;">
+            <button type="button" onclick="save()">Save</button>
+
+            <button type="button" onclick="edit()">Edit</button>
+            </div>
+        </form>
+
+      </div>
+
+      <div id="error-message"></div>
+    </section>
+  </section>
+
+  <script src="javascript.js"></script>
+</body>
+</html>

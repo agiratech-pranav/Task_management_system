@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="body">
+    <section id="navbar">
+      <div id="company_logo">
+        <img src="img/company_logo.png" alt="Company Logo">
+      </div>
+      <br>
+      <div id="person_details">
+        <div id="profile_img">
+          <img src="img/proflile_img.png" alt="Profile Image">
+        </div>
+        <div id="person_name">
+          <h1>Pranav Bhatnagar</h1>
+        </div>
+      </div>
+      <div id="nav_content">
+        <ul>
+          <li><a href="http://127.0.0.1:5500/public/dashboard.html">Dashboard</a></li>
+          <li><a href="http://127.0.0.1:5500/public/profile.html">Profile</a></li>
+
+        </ul>
+      </div>
+    </section>
+
+    <section id="content">
+        <div id="profile_data">
+        
+        <table id="task_layout">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title">
+    
+            <label for="Description">Description:</label>
+            <input type="text" id="Description" name="Description">
+    
+            <label for="status">status:</label>
+            <input type="text" id="status" name="status">
+            
+            <br><br><br>
+
+            <button style="margin-left: 35%;" type="button" onclick="save_task()">Save</button>
+            
+        </table>
+
+      </div>
+
+      <div id="error-message"></div>
+    </section>
+  </section>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+<script src="javascript.js"></script>
+</body>
+</html>
