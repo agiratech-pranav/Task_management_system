@@ -91,3 +91,29 @@ async function save_task() {
     alert('Failed to save task.');
   }
 }
+
+// const add_button=document.getElementById("add_task_button");
+// add_button.addEventListener("click", function(){
+//   add_button.style.backgroundColor="green";
+// })
+
+function update_task() {
+    const id = document.getElementById("id").value;
+    const status = document.getElementById("status").value;
+
+    fetch('http://localhost:3000/update-task', {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ id :id, status: status })
+    })
+    .then(response => response.json())
+    .then(data => {
+        alert(data.message);
+    })
+    .catch(error => {
+        console.error("Error:", error);
+        alert("Failed to update task.");
+    });
+}

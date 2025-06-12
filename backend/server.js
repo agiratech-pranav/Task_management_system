@@ -47,9 +47,31 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: 'Something went wrong!' });
 });
 
+app.put('/update-task', (req, res) => {
+    const { id, status } = req.body;
+
+    const sql = 'UPDATE tasks SET status = ? WHERE id = ?';
+    db.query(sql, [status, id], (err, result) => {
+        if (err) {
+            console.error(err);
+            return res.status(500).json({ message: 'Database error' });
+        }
+
+        if (result.affectedRows === 0) {
+            return res.status(404).json({ message: 'Task not found' });
+        }
+
+        res.json({ message: 'Task status updated successfully' });
+    });
+});
+
 // Start the server
 const PORT = 3000;
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
 
+
+// app.listen(port, () => {
+//     console.log(`Server running at http://localhost:${port}`);
+// });

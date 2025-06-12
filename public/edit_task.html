@@ -25,33 +25,30 @@
         <ul>
           <li><a href="http://127.0.0.1:5500/public/dashboard.html">Dashboard</a></li>
           <li><a href="http://127.0.0.1:5500/public/profile.html">Profile</a></li>
+
         </ul>
       </div>
     </section>
 
     <section id="content">
-      <div id="task_table">
-        <div style="display: flex;">
-            <div id="add_task_button">
-              <p><a href="http://127.0.0.1:5500/public/addtask.html">Add Task</a></p>
-            </div>
+      <div id="profile_data">
+        
+        <form>
+             
+            <label style="margin-left:20%" for="id">ID:</label>
+            <input type="number" id="id" name="id">
+    
+            <label for="status">status:</label>
+            <input type="text" id="status" name="status">
+            
+            <br><br><br>
 
-            <div id="edit_task_button">
-              <p><a href="http://127.0.0.1:5500/public/edit_task.html">Update Task</a></p>
-            </div>
-        </div>
-        <br>
+             <button style="margin-left: 35%;" type="button" onclick="update_task()">Update</button>
+            
+        </form>
 
-        <table id="taskTable">
-          <tr>
-            <th>ID</th>
-            <th>Title</th>
-            <th>Description</th>
-            <th>Status</th>
-            <th>Created At</th>
-          </tr>
-        </table>
       </div>
+
       <div id="error-message"></div>
     </section>
   </section>
